@@ -1,0 +1,52 @@
+
+
+.posts-container {
+  position: absolute;
+  margin-top: 5%;
+  width: 50%;
+}
+
+.posts-title {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.posts-list {
+  list-style: none;
+  padding: 0;
+}
+.item-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+}
+
+.item-title .title {
+  font-size: 1.4em;
+}
+
+.item-title .date {
+  display: inline-block;
+  float: right;
+}
+
+
+div.paginator {
+  width: 100%;
+  margin-top: 10%;
+  text-align: center;
+}
+
+.paginate-link {
+  display: inline-block;
+  font-size: 1.5em;
+}
+
+
+.separator {
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+}
