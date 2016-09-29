@@ -1,5 +1,3 @@
-
-
 .posts-container {
   position: absolute;
   margin-top: 5%;
@@ -15,17 +13,42 @@
   list-style: none;
   padding: 0;
 }
+
 .item-title {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-top: 2.5%;
   margin-bottom: 2.5%;
 }
 
-.item-title .title {
-  font-size: 1.4em;
+.item-title:after {
+  content: '';
+  margin-top: 2.5%;
+  width: 100%;
+  height: 1px;
+  display: block;
+  background-image: linear-gradient(to right, rgba(0,0,0,.1), rgba(0,0,0,.3), rgba(0,0,0,.1));
+}
+
+.inner-title {
+  margin: auto 0%;
+  width: 80%;
+}
+
+.title-link {
+  display: inline-block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.date {
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
 }
 
 .item-title .date {
@@ -36,15 +59,39 @@
 
 div.paginator {
   width: 100%;
-  margin-top: 10%;
+  margin-top: 5%;
   text-align: center;
 }
 
 .paginate-link {
   display: inline-block;
-  font-size: 1.5em;
+  width: 2vw;
+  height: 2vw;
+  line-height: 2vw;
+  border: 2px solid rgba(64, 62, 61, .8);
+  color: rgba(64, 62, 61, .8);
+  text-align: center;
 }
 
+.paginate-link.link-disabled {
+  color: rgba(0, 0, 0, .2);
+}
+.paginate-link:last-child {
+  border-left: 1px solid black;
+  margin-left: -5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.paginate-link:first-child {
+  border-right: 1px solid black;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.paginate-link:not(.link-disabled):hover{
+  background-color: rgba(64, 62, 61, .3);
+}
 
 .separator {
   margin-left: 1.5%;

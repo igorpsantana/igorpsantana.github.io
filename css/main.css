@@ -1,18 +1,28 @@
 body {
   margin: 0;
 }
+html,body {
+  height: 100%;
+}
 
 @font-face {
   font-family: Bellerose;
   src: url('../fonts/Bellerose.ttf');
 }
 
+h1,h2,h3,h4,h5,h6 {
+  font-family: Raleway, sans-serif;
+  color: rgba(64, 62, 61, .8);
+
+  letter-spacing: 1px;
+  font-weight: 600;
+}
 .l-reset {
   color: inherit;
   text-decoration: none;
 }
 
-a.link-disabled {
+.link-disabled {
   pointer-events: none;
 }
 
@@ -20,6 +30,7 @@ main.container {
   width: 50%;
   margin-left: 25%;
   margin-right: 25%;
+  height: 100%;
 }
 
 .post {
