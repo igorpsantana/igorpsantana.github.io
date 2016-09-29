@@ -13,7 +13,6 @@ html,body {
 h1,h2,h3,h4,h5,h6 {
   font-family: Raleway, sans-serif;
   color: rgba(64, 62, 61, .8);
-
   letter-spacing: 1px;
   font-weight: 600;
 }
