@@ -89,7 +89,7 @@ div.paginator {
 }
 
 .paginate-link:not(.link-disabled):hover{
-  background-color: rgba(64, 62, 61, .3);
+  background-color: rgba(64, 62, 61, .1);
 }
 
 .separator {
