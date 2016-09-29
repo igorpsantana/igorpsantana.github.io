@@ -4,9 +4,25 @@
   width: 50%;
 }
 
+
+.title-select-holder {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+}
+
 .posts-title {
-  margin-top: 5%;
-  margin-bottom: 5%;
+  display: inline;
+  width: 80%;
+}
+
+select.tags {
+  width: 20%;
+  display: inline-block;
+  background-color: transparent;
 }
 
 .posts-list {
