@@ -1,0 +1,249 @@
+html, body {
+    min-height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+}
+
+@font-face {
+    font-family: "Dosis";
+    src: url(../assets/Dosis-VariableFont_wght.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Assistant";
+    src: url(../assets/Assistant-Light.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Bangers";
+    src: url(../assets/Bangers-Regular.ttf) format("truetype");
+}
+
+.column {
+    flex: 1;
+}
+
+section#left_side {
+    order: 1;
+    width: 30%;
+    height: 100%;
+    display: flex;
+}
+
+section#main {
+    order: 2;
+    width: 40%;
+    height: 100%;
+    background-color: #CAF0F8;
+}
+
+section#right_side {
+    order: 3;
+    width: 30%;
+    height: 100%;
+    display: flex;
+}
+
+section .gradient {
+    height: 100%;
+    width: 12.5%;
+}
+
+section .gradient.bg-blizzard_blue {
+    background-color: #ADE8F4;
+}
+
+section .gradient.bg-sky_blue_crayola_light {
+    background-color: #90E0EF;
+}
+
+section .gradient.bg-sky_blue_crayola {
+    background-color: #48CAE4;
+}
+
+section .gradient.bg-cerulean_crayola {
+    background-color: #00B4D8;
+}
+
+section .gradient.bg-blue_green {
+    background-color: #0096C7;
+}
+
+section .gradient.bg-star_command_blue {
+    background-color: #0077B6;
+}
+
+section .gradient.bg-dark_cornflower_blue {
+    background-color: #023E8A;
+}
+
+section .gradient.bg-navyblue {
+    background-color: #03045E;
+}
+
+img#profile {
+    max-width: 20%;
+    /** Alterar para resoluções de celular **/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    display: block;
+}
+
+div#basic-info {
+    width: 100%;
+    text-align: center;
+    margin-top: 2.5%;
+}
+
+div#basic-info hr {
+    width: 60%;
+    border: 0;
+    height: 1px;
+    background: #03045E;
+    background-image: linear-gradient(to right, #CAF0F8, #03045E, #CAF0F8);
+    /* border: 1px solid #023E8A; */
+    /* border-left-width: 0; */
+}
+
+div#basic-info h1 {
+    font-size: 32px;
+    margin: 1% auto;
+    font-family: Bangers;
+    color: #001233;
+}
+
+div#basic-info h2 {
+    font-size: 22px;
+    margin: 1% auto;
+    font-family: Assistant;
+    margin-bottom: 0;
+}
+
+div#basic-info h3 {
+    font-size: 22px;
+    margin: 1% auto;
+    font-family: Assistant;
+    margin-bottom: 0;
+}
+
+div#basic-info *#subtitle {
+    margin: 0 auto;
+    font-family: Assistant;
+    font-size: 16px;
+    color: lightslategray;
+}
+
+div#social {
+    width: 100%;
+    text-align: center;
+    margin-top: 2.5%;
+}
+
+div#social a {
+    display: inline-block;
+    text-decoration: none;
+    color: #023E8A;
+    font-size: 20px;
+    padding: 0 1em;
+    font-family: Dosis;
+    font-weight: bold;
+}
+
+div#social a:hover {
+    color: #023E8A;
+    font-size: 22px;
+}
+
+div#social a i {
+    font-size: 24px;
+    margin-right: .25em;
+}
+
+div#works {
+    margin-top: 5%;
+    text-align: center;
+    font-family: Dosis;
+    font-weight: bold;
+}
+
+div#works h2.artigos {
+    margin-top: 0;
+}
+
+div#works ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+div#works ul li {
+    font-family: Assistant;
+}
+
+div#works ul li p.paper-title {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+div#works ul li p.paper-info {
+    margin-top: 0;
+    color: #5F7981;
+    font-size: 14px;
+}
+
+@media (min-width: 320px) and (max-width: 800px) {
+    section#left_side {
+        width: 20%;
+    }
+    section#main {
+        width: 60%;
+    }
+    section#right_side {
+        width: 20%;
+    }
+    img#profile {
+        max-width: 40%;
+        /** Alterar para resoluções de celular **/
+        margin-top: 2.5%;
+    }
+    div#basic-info h1 {
+        font-size: 24px;
+    }
+    div#basic-info h2 {
+        font-size: 14px;
+    }
+    div#basic-info h3 {
+        font-size: 14px;
+    }
+    div#basic-info *#subtitle {
+        font-size: 12px;
+    }
+
+    div#social a {
+        font-size: 12px;
+        padding: 0 1em;
+    }
+    
+    div#social a:hover {
+        font-size: 12px;
+    }
+    
+    div#social a i {
+        font-size: 12px;
+    }
+
+    
+div#works ul li {
+    font-family: Assistant;
+}
+
+div#works ul li p.paper-title {
+    font-size: 14px;
+}
+
+div#works ul li p.paper-info {
+    font-size: 10px;
+}
+}
